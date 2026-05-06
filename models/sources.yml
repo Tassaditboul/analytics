@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: PC_FIVETRAN_DB
+    database: PC_FIVETRAN_DB
+    schema: GOOGLE_DRIVE
+    tables:
+      - name: CUSTOMERS_202604301513
+        identifier: CUSTOMERS_202604301513
+      - name: EMPLOYEES_202604301513
+      - name: OFFICES_202604301513
+      - name: ORDERDETAILS_202604301513
+      - name: ORDERS_202604301513
+
+      - name: PAYMENTS_202604301513
+
+      - name: PRODUCTLINES_202604301513
+      - name: PRODUCTS_202604301513

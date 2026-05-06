@@ -1,0 +1,19 @@
+name: 'PC_FIVETRAN_DB'
+version: '1.0.0'
+config-version: 2
+
+profile: 'default'
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+
+models:
+  PC_FIVETRAN_DB:
+    +database: USER$TASSADI
+    +schema: DBT_TBOULKOUANE
+
+    staging:
+      +materialized: view
+
+    marts:
+      +materialized: table
